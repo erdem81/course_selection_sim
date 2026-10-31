@@ -1,0 +1,628 @@
+{
+ "config": {
+  "n_students": 600,
+  "n_courses": 30,
+  "k": 2,
+  "seat_ratio": 0.9,
+  "w_pop": 0.5,
+  "sigma": 0.2,
+  "tau": 1,
+  "p_slow_net": 0.3,
+  "p_busy": 0.15,
+  "p_script": 0.05,
+  "reaction_median_s": 3.0,
+  "slow_net_extra_s": 8.0,
+  "busy_delay_min_s": 300,
+  "busy_delay_max_s": 3600,
+  "script_reaction_s": 0.2,
+  "bid_top_L": 4,
+  "bid_points": 100,
+  "rank_list_L": 4,
+  "seeds": 30
+ },
+ "quick": false,
+ "e1": {
+  "FCFS": {
+   "satisfaction_mean": 0.6815,
+   "satisfaction_p10": 0.1801,
+   "top1_rate": 0.1508,
+   "full_k_rate": 0.895,
+   "zero_rate": 0.095,
+   "envy_rate": 0.9678,
+   "envy_mean_norm": 0.3161,
+   "envy_severe_rate": 0.4831,
+   "jain": 0.8623,
+   "gini": 0.2055,
+   "speed_outcome_corr": 0.7762,
+   "gap_slow_net": -0.1241,
+   "gap_busy": -0.5821,
+   "gap_script": 0.2036
+  },
+  "Lottery(RSD)": {
+   "satisfaction_mean": 0.6826,
+   "satisfaction_p10": 0.1866,
+   "top1_rate": 0.1516,
+   "full_k_rate": 0.8958,
+   "zero_rate": 0.0958,
+   "envy_rate": 0.9697,
+   "envy_mean_norm": 0.3148,
+   "envy_severe_rate": 0.4842,
+   "jain": 0.8628,
+   "gini": 0.205,
+   "speed_outcome_corr": -0.0084,
+   "gap_slow_net": 0.0036,
+   "gap_busy": -0.0016,
+   "gap_script": -0.0011
+  },
+  "SnakeDraft": {
+   "satisfaction_mean": 0.691,
+   "satisfaction_p10": 0.4564,
+   "top1_rate": 0.1725,
+   "full_k_rate": 0.8,
+   "zero_rate": 0.0,
+   "envy_rate": 0.9783,
+   "envy_mean_norm": 0.2339,
+   "envy_severe_rate": 0.3759,
+   "jain": 0.9504,
+   "gini": 0.1284,
+   "speed_outcome_corr": 0.0014,
+   "gap_slow_net": -0.0003,
+   "gap_busy": 0.0008,
+   "gap_script": 0.0034
+  },
+  "PointsBidding": {
+   "satisfaction_mean": 0.6993,
+   "satisfaction_p10": 0.4196,
+   "top1_rate": 0.1921,
+   "full_k_rate": 0.8225,
+   "zero_rate": 0.0225,
+   "envy_rate": 0.9755,
+   "envy_mean_norm": 0.2793,
+   "envy_severe_rate": 0.4481,
+   "jain": 0.9216,
+   "gini": 0.1565,
+   "speed_outcome_corr": -0.0088,
+   "gap_slow_net": 0.0058,
+   "gap_busy": 0.0004,
+   "gap_script": -0.0185
+  },
+  "RankedLottery": {
+   "satisfaction_mean": 0.6963,
+   "satisfaction_p10": 0.4152,
+   "top1_rate": 0.1786,
+   "full_k_rate": 0.8214,
+   "zero_rate": 0.0214,
+   "envy_rate": 0.9759,
+   "envy_mean_norm": 0.2695,
+   "envy_severe_rate": 0.425,
+   "jain": 0.9223,
+   "gini": 0.156,
+   "speed_outcome_corr": -0.0039,
+   "gap_slow_net": 0.0042,
+   "gap_busy": 0.0043,
+   "gap_script": -0.0003
+  }
+ },
+ "e1_ci95": {
+  "FCFS": {
+   "satisfaction_mean": 0.0056,
+   "satisfaction_p10": 0.0168,
+   "top1_rate": 0.0049,
+   "full_k_rate": 0.0014,
+   "zero_rate": 0.0014,
+   "envy_rate": 0.0021,
+   "envy_mean_norm": 0.0057,
+   "envy_severe_rate": 0.0182,
+   "jain": 0.0019,
+   "gini": 0.003,
+   "speed_outcome_corr": 0.0131,
+   "gap_slow_net": 0.0094,
+   "gap_busy": 0.0122,
+   "gap_script": 0.011
+  },
+  "Lottery(RSD)": {
+   "satisfaction_mean": 0.0055,
+   "satisfaction_p10": 0.0133,
+   "top1_rate": 0.0054,
+   "full_k_rate": 0.0015,
+   "zero_rate": 0.0015,
+   "envy_rate": 0.0023,
+   "envy_mean_norm": 0.0057,
+   "envy_severe_rate": 0.0176,
+   "jain": 0.0019,
+   "gini": 0.003,
+   "speed_outcome_corr": 0.0132,
+   "gap_slow_net": 0.0077,
+   "gap_busy": 0.0112,
+   "gap_script": 0.0224
+  },
+  "SnakeDraft": {
+   "satisfaction_mean": 0.0061,
+   "satisfaction_p10": 0.0028,
+   "top1_rate": 0.0071,
+   "full_k_rate": 0.0,
+   "zero_rate": 0.0,
+   "envy_rate": 0.0023,
+   "envy_mean_norm": 0.0027,
+   "envy_severe_rate": 0.0084,
+   "jain": 0.0009,
+   "gini": 0.0012,
+   "speed_outcome_corr": 0.0192,
+   "gap_slow_net": 0.0043,
+   "gap_busy": 0.0076,
+   "gap_script": 0.0129
+  },
+  "PointsBidding": {
+   "satisfaction_mean": 0.0057,
+   "satisfaction_p10": 0.0058,
+   "top1_rate": 0.0053,
+   "full_k_rate": 0.0018,
+   "zero_rate": 0.0018,
+   "envy_rate": 0.0021,
+   "envy_mean_norm": 0.0045,
+   "envy_severe_rate": 0.0149,
+   "jain": 0.0019,
+   "gini": 0.0022,
+   "speed_outcome_corr": 0.0152,
+   "gap_slow_net": 0.0061,
+   "gap_busy": 0.0073,
+   "gap_script": 0.0137
+  },
+  "RankedLottery": {
+   "satisfaction_mean": 0.0059,
+   "satisfaction_p10": 0.0055,
+   "top1_rate": 0.0061,
+   "full_k_rate": 0.0024,
+   "zero_rate": 0.0024,
+   "envy_rate": 0.002,
+   "envy_mean_norm": 0.0049,
+   "envy_severe_rate": 0.015,
+   "jain": 0.0024,
+   "gini": 0.0026,
+   "speed_outcome_corr": 0.015,
+   "gap_slow_net": 0.0057,
+   "gap_busy": 0.0084,
+   "gap_script": 0.0143
+  }
+ },
+ "e1_fcfs_fill": {
+  "top5_popular_median_fill_s": 3.15,
+  "all_courses_median_fill_s": 8.66,
+  "share_courses_full_within_60s": 0.799
+ },
+ "e2": {
+  "seat_ratio": [
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1
+  ],
+  "FCFS": {
+   "gap_busy": [
+    -0.491,
+    -0.581,
+    -0.6708,
+    -0.5884,
+    -0.2463,
+    -0.1716
+   ],
+   "zero_rate": [
+    0.3968,
+    0.296,
+    0.1968,
+    0.0961,
+    0.0,
+    0.0
+   ],
+   "satisfaction_p10": [
+    0.0,
+    0.0,
+    0.0,
+    0.1827,
+    0.5393,
+    0.5985
+   ]
+  },
+  "Lottery(RSD)": {
+   "gap_busy": [
+    0.0075,
+    0.0046,
+    0.0041,
+    -0.0027,
+    0.0003,
+    0.0029
+   ],
+   "zero_rate": [
+    0.3967,
+    0.2961,
+    0.1958,
+    0.0968,
+    0.0,
+    0.0
+   ],
+   "satisfaction_p10": [
+    0.0,
+    0.0,
+    0.0,
+    0.1911,
+    0.5472,
+    0.6014
+   ]
+  },
+  "SnakeDraft": {
+   "gap_busy": [
+    0.0027,
+    0.0028,
+    0.0009,
+    0.0002,
+    0.0022,
+    -0.0007
+   ],
+   "zero_rate": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "satisfaction_p10": [
+    0.3329,
+    0.3709,
+    0.4044,
+    0.4563,
+    0.6277,
+    0.6573
+   ]
+  },
+  "PointsBidding": {
+   "gap_busy": [
+    -0.0003,
+    0.0008,
+    -0.0007,
+    0.0007,
+    -0.0021,
+    -0.001
+   ],
+   "zero_rate": [
+    0.1591,
+    0.1001,
+    0.0552,
+    0.0216,
+    0.0,
+    0.0
+   ],
+   "satisfaction_p10": [
+    0.0,
+    0.1342,
+    0.3401,
+    0.4214,
+    0.6093,
+    0.6461
+   ]
+  },
+  "RankedLottery": {
+   "gap_busy": [
+    0.0015,
+    0.0113,
+    0.003,
+    0.0043,
+    0.0016,
+    -0.0017
+   ],
+   "zero_rate": [
+    0.155,
+    0.0974,
+    0.0506,
+    0.0204,
+    0.0,
+    0.0
+   ],
+   "satisfaction_p10": [
+    0.0,
+    0.1488,
+    0.3422,
+    0.42,
+    0.6054,
+    0.6428
+   ]
+  }
+ },
+ "e3": {
+  "sigma": 0.4,
+  "tau": [
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "FCFS": {
+   "satisfaction_mean": [
+    0.6372,
+    0.6603,
+    0.6839,
+    0.704,
+    0.7195
+   ],
+   "top1_rate": [
+    0.1163,
+    0.1324,
+    0.1518,
+    0.1727,
+    0.1938
+   ]
+  },
+  "Lottery(RSD)": {
+   "satisfaction_mean": [
+    0.6393,
+    0.6608,
+    0.6853,
+    0.7062,
+    0.7223
+   ],
+   "top1_rate": [
+    0.1147,
+    0.1312,
+    0.1542,
+    0.178,
+    0.2003
+   ]
+  },
+  "SnakeDraft": {
+   "satisfaction_mean": [
+    0.6421,
+    0.6674,
+    0.6943,
+    0.7164,
+    0.7331
+   ],
+   "top1_rate": [
+    0.1199,
+    0.1427,
+    0.1751,
+    0.2075,
+    0.2414
+   ]
+  },
+  "PointsBidding": {
+   "satisfaction_mean": [
+    0.6465,
+    0.6746,
+    0.7018,
+    0.7255,
+    0.7427
+   ],
+   "top1_rate": [
+    0.1243,
+    0.1533,
+    0.1933,
+    0.2393,
+    0.2914
+   ]
+  },
+  "RankedLottery": {
+   "satisfaction_mean": [
+    0.6452,
+    0.6718,
+    0.6991,
+    0.7214,
+    0.7377
+   ],
+   "top1_rate": [
+    0.1197,
+    0.1478,
+    0.1806,
+    0.2222,
+    0.2622
+   ]
+  },
+  "noise_free": {
+   "FCFS": {
+    "satisfaction_mean": 0.7448,
+    "top1_rate": 0.2512
+   },
+   "Lottery(RSD)": {
+    "satisfaction_mean": 0.7442,
+    "top1_rate": 0.2499
+   },
+   "SnakeDraft": {
+    "satisfaction_mean": 0.7597,
+    "top1_rate": 0.4188
+   },
+   "PointsBidding": {
+    "satisfaction_mean": 0.7698,
+    "top1_rate": 0.4831
+   },
+   "RankedLottery": {
+    "satisfaction_mean": 0.764,
+    "top1_rate": 0.5157
+   }
+  }
+ },
+ "e4": {
+  "semesters": 8,
+  "bad_threshold": 0.5,
+  "temporary": {
+   "share_students_bad_half_or_more": {
+    "FCFS": 0.037,
+    "Lottery(RSD)": 0.0292,
+    "SnakeDraft": 0.0265,
+    "PointsBidding": 0.0398,
+    "RankedLottery": 0.0432
+   },
+   "between_semester_corr": {
+    "FCFS": 0.0553,
+    "Lottery(RSD)": -0.0005,
+    "SnakeDraft": -0.0034,
+    "PointsBidding": -0.0006,
+    "RankedLottery": 0.0004
+   }
+  },
+  "persistent": {
+   "share_students_bad_half_or_more": {
+    "FCFS": 0.1418,
+    "Lottery(RSD)": 0.0292,
+    "SnakeDraft": 0.0265,
+    "PointsBidding": 0.0398,
+    "RankedLottery": 0.0432
+   },
+   "between_semester_corr": {
+    "FCFS": 0.7298,
+    "Lottery(RSD)": -0.0005,
+    "SnakeDraft": -0.0034,
+    "PointsBidding": -0.0006,
+    "RankedLottery": 0.0004
+   }
+  }
+ },
+ "p1": {
+  "tau": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   32,
+   64
+  ],
+  "sigma": 1.0,
+  "m12_mean_gap_delta": 1.233,
+  "m12": {
+   "threshold_c1": [
+    0.157,
+    0.23,
+    0.213,
+    0.21,
+    0.143,
+    0.117,
+    0.12
+   ],
+   "threshold_tuned": [
+    0.21,
+    0.257,
+    0.41,
+    0.537,
+    0.723,
+    0.883,
+    0.96
+   ],
+   "random": [
+    0.067,
+    0.083,
+    0.097,
+    0.067,
+    0.11,
+    0.1,
+    0.137
+   ],
+   "brute_force": [
+    0.203,
+    0.27,
+    0.393,
+    0.577,
+    0.787,
+    0.92,
+    0.99
+   ]
+  },
+  "m100": {
+   "threshold_c1": [
+    0.15,
+    0.087,
+    0.043,
+    0.007,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "threshold_tuned": [
+    0.283,
+    0.393,
+    0.63,
+    0.913,
+    0.997,
+    1.0,
+    1.0
+   ],
+   "random": [
+    0.1,
+    0.093,
+    0.09,
+    0.093,
+    0.12,
+    0.093,
+    0.1
+   ]
+  }
+ },
+ "p2": {
+  "m": [
+   25.0,
+   50.0,
+   100.0,
+   200.0,
+   400.0,
+   800.0
+  ],
+  "envy_mean": [
+   -0.0808,
+   0.0807,
+   0.0248,
+   0.3847,
+   0.5898,
+   -0.3152
+  ],
+  "envy_std": [
+   2.9181,
+   4.2602,
+   5.8004,
+   8.1829,
+   11.4739,
+   15.9284
+  ],
+  "p_ef": [
+   0.11,
+   0.1267,
+   0.1092,
+   0.1192,
+   0.1008,
+   0.125
+  ]
+ },
+ "p3": {
+  "m": [
+   6.0,
+   8.0,
+   10.0,
+   12.0,
+   14.0,
+   16.0,
+   18.0,
+   20.0
+  ],
+  "brute_s": [
+   0.000182,
+   0.000184,
+   0.000221,
+   0.000725,
+   0.005435,
+   0.022958,
+   0.103854,
+   0.449977
+  ],
+  "threshold_s": [
+   0.01104,
+   0.011694,
+   0.007436,
+   0.011161,
+   0.008472,
+   0.008377,
+   0.007804,
+   0.007275
+  ],
+  "brute_extrapolated_m40_hours": 320.5
+ }
+}

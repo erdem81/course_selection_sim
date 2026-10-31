@@ -1,0 +1,11 @@
+﻿condition,mechanism,机制,≥4个学期满意度<0.5的学生比例,学期间结果相关系数
+temporary,FCFS,先到先得,0.037,0.0553
+temporary,Lottery(RSD),纯抽签(RSD),0.0292,-0.0005
+temporary,SnakeDraft,蛇形轮选,0.0265,-0.0034
+temporary,PointsBidding,意愿点投标,0.0398,-0.0006
+temporary,RankedLottery,志愿+抽签,0.0432,0.0004
+persistent,FCFS,先到先得,0.1418,0.7298
+persistent,Lottery(RSD),纯抽签(RSD),0.0292,-0.0005
+persistent,SnakeDraft,蛇形轮选,0.0265,-0.0034
+persistent,PointsBidding,意愿点投标,0.0398,-0.0006
+persistent,RankedLottery,志愿+抽签,0.0432,0.0004
